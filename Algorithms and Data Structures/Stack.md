@@ -2,7 +2,7 @@
 
 ## What is a stack
 A stack can be an array or linked list, where the order of items pushed onto or popped from the stack is important. 
-They follow an implementation order such as LIFO (Last In First Out) or FIFO (First In First Out). 
+They follow an implementation order of LIFO (Last In First Out), meaning the last node pushed onto the stack is the first one to be popped.
 
 ## Using a LIFO stack
 - When pushing on to the stack, a node can be added to the top of the stack
