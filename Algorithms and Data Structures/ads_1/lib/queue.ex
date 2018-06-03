@@ -1,4 +1,16 @@
 defmodule Ads1.Queue do
+  @moduledoc """
+  A Queue that uses the First In, First Out (FIFO) method,
+  unless provided with a function to prioritise items.
+
+  An example of this function might be to order from highest to lowest numbers,
+  regardless of when they are added to the queue.
+  For example, we have this queue:
+  [7, 5, 2]
+  When we add 6 to the queue, it results in:
+  [7, 6, 5, 2]
+  """
+
   use GenServer
 
   def start_link(prioritise \\ fn _, _ -> true end) do

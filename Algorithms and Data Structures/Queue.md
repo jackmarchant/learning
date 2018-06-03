@@ -58,3 +58,5 @@ In Elixir, you can reference any Erlang modules with atom syntax. We can use the
 > {{:value, head}, queue} = :queue.out(queue)
 {{:value, 1}, {[3], [2]}}
 ```
+
+[Queue Example with priority](./ads_1/lib/queue.ex)
